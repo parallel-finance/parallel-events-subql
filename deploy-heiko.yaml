@@ -1,6 +1,6 @@
-specVersion: 0.2.0
+specVersion: 1.0.0
 name: para-events
-version: 0.0.4
+version: 1.0.0
 description: all the heiko events subquery
 repository: 'https://github.com/subquery/parallel-heiko-subql-starter'
 schema:
