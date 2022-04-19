@@ -1,0 +1,20 @@
+type Events @entity {
+  id: ID!
+
+  idx: Int
+
+  blockHeight: Int @index
+
+  blockHash: String
+
+  extrinsicHash: String
+
+  module: String
+
+  method: String
+
+  data: String
+
+  timestamp: Date
+
+}
