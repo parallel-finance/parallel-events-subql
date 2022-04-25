@@ -62,6 +62,5 @@ Use `CID` for next step.
 
 Go To subQuery project page, click Deploy button for staging slot and enter the CID you previously get. After staging finished deployment and everything looks good. Click `Promote to production` deploy the changes to production slot.
 
-
 - Heiko: https://project.subquery.network/project/parallel-finance/parallel-heiko-events-subql
 - Parallel: https://project.subquery.network/project/parallel-finance/parallel-events-subql
