@@ -20,7 +20,7 @@ network:
   dictionary: 'https://api.subquery.network/sq/subquery/parallel-heiko-dictionary'
 dataSources:
   - kind: substrate/Runtime
-    startBlock: 900000
+    startBlock: 820000
     mapping:
       file: ./dist/index.js
       handlers:
