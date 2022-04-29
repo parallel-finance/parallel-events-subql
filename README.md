@@ -64,3 +64,5 @@ Go To subQuery project page, click Deploy button for staging slot and enter the 
 
 - Heiko: https://project.subquery.network/project/parallel-finance/parallel-heiko-events-subql
 - Parallel: https://project.subquery.network/project/parallel-finance/parallel-events-subql
+- Heiko(Staging): https://project.subquery.network/project/zhihuizhangjaden/heiko-parallel-events-subql-staging
+- Parallel(Staging): https://project.subquery.network/project/parallel-finance/parallel-events-subql-staging

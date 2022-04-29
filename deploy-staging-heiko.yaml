@@ -1,0 +1,30 @@
+specVersion: 1.0.0
+name: para-events
+version: 1.0.0
+description: all the heiko events subquery in staging env
+repository: 'git@github.com:parallel-finance/heiko-events-suqbl.git'
+runner:
+  node:
+    name: '@subql/node'
+    version: '0.33.0'
+  query:
+    name: '@subql/query'
+    version: '^0.12.0'
+schema:
+  file: ./schema.graphql
+network:
+  endpoint: 'wss://regnet3-rpc.parallel.fi'
+  genesisHash: '0x09b5b441eade124b68368a96aa908c0e7dbb57a88dc993ce35b1bdc8b81bf919'
+  chaintypes:
+    file: ./dist/chaintypes.js
+  dictionary: 'https://api.subquery.network/sq/subquery/parallel-heiko-dictionary'
+dataSources:
+  - kind: substrate/Runtime
+    startBlock: 4570
+    mapping:
+      file: ./dist/index.js
+      handlers:
+
+        - handler: handleEvent
+          kind: substrate/EventHandler
+

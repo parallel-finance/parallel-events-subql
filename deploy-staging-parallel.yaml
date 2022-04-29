@@ -1,0 +1,28 @@
+specVersion: 1.0.0
+name: parallel-events
+version: 1.0.0
+description: All events subquery in staging parallel blockchain
+repository: 'https://github.com/parallel-finance/parallel-events-subql'
+runner:
+  node:
+    name: '@subql/node'
+    version: '0.33.0'
+  query:
+    name: '@subql/query'
+    version: '^0.12.0'
+schema:
+  file: ./schema.graphql
+network:
+  endpoint: 'wss://regnet2-rpc.parallel.fi'
+  genesisHash: '0x4975d5639ff79cc63b2e41939e77c54be6c414c6ebb6a601cc341431ea8ba89a'
+  chaintypes:
+    file: ./dist/chaintypes.js
+  dictionary: 'https://api.subquery.network/sq/subquery/parallel-heiko-dictionary'
+dataSources:
+  - kind: substrate/Runtime
+    startBlock: 56690
+    mapping:
+      file: ./dist/index.js
+      handlers:
+        - handler: handleEvent
+          kind: substrate/EventHandler
