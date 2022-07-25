@@ -13,6 +13,8 @@ type Events @entity {
 
   method: String
 
+  rawType: String
+
   data: String
 
   timestamp: Date
