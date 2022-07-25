@@ -20,6 +20,7 @@ export async function handleEvent(event: SubstrateEvent): Promise<void> {
         record.extrinsicHash = extrinsicHash
         record.module = section
         record.method = method
+        record.rawType= data.toRawType()
         record.data = data.toString()
         record.timestamp = blockTimestamp
 
